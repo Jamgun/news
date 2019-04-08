@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".webv">
+    <ImageView
+        android:id="@+id/img_pgbar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/amin_pgbar"/>
+
+        <Button
+            android:onClick="onclickshoucang"
+            android:id="@+id/shoucang"
+            android:layout_width="40dp"
+            android:background="@mipmap/favorite"
+            android:layout_margin="10dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+        <Button
+            android:onClick="onclickshare"
+            android:background="@mipmap/share"
+            android:id="@+id/fenxiang"
+            android:layout_width="40dp"
+            android:layout_margin="5dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/shoucang"/>
+
+
+    <WebView
+        android:layout_width="wrap_content"
+        android:id="@+id/web1"
+        android:layout_height="wrap_content"
+        >
+
+    </WebView>
+
+
+</RelativeLayout>

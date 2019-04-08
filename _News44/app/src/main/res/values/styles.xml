@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+    <style name="A.Night">
+        <item name="colorA">@color/color_a_night</item>
+    </style>
+    <style name="A">
+        <item name="colorA">@color/color_a</item>
+    </style>
+    <style name="Theme.AppCompat.DayNight"
+        parent="Theme.AppCompat.Light" />
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--&lt;!&ndash; 日间模式 &ndash;&gt;-->
+    <!--<style name="AppTheme.day" parent="AppTheme">-->
+        <!--<item name="containerBackground">@color/white_dark</item>-->
+        <!--<item name="titleColor">@color/gray_dark</item>-->
+        <!--<item name="textColor">@color/gray</item>-->
+        <!--<item name="selectorBtn">@drawable/navigator_list_item_day</item>-->
+        <!--<item name="selectorListItem">@drawable/list_item_day</item>-->
+    <!--</style>-->
+    <!--&lt;!&ndash; 夜间模式 &ndash;&gt;-->
+    <!--<style name="AppTheme.night" parent="AppTheme">-->
+        <!--<item name="containerBackground">@color/green_dark</item>-->
+        <!--<item name="titleColor">@color/white_dark</item>-->
+        <!--<item name="textColor">@color/green_light</item>-->
+        <!--<item name="selectorBtn">@drawable/navigator_list_item_night</item>-->
+        <!--<item name="selectorListItem">@drawable/list_item_night</item>-->
+    <!--</style>-->
+
+</resources>
+

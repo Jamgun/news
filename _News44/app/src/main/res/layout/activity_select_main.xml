@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".select_main"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/exitbtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@mipmap/del"
+        android:onClick="onClickreturnmain"
+
+        android:layout_margin="10dp"/>
+    <Button
+        android:id="@+id/huyan"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        android:onClick="onclickhuyan"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"/>
+    <Button
+        android:id="@+id/huyan0"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@mipmap/image"
+        android:onClick="onclickhuyan"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+
+        android:layout_below="@id/exitbtn"
+        android:id="@+id/liner3"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="我的频道"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:gravity="left"
+            android:textSize="15dp"
+            android:text="点击删除频道"/>
+
+    </LinearLayout>
+    <GridView
+        android:id="@+id/gridicon1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10px"
+        android:horizontalSpacing="4px"
+        android:verticalSpacing="4px"
+        android:numColumns="4"
+        android:layout_below="@id/liner3"
+        android:layout_above="@id/liner4"
+        android:focusable="true"
+        android:descendantFocusability="blocksDescendants">
+    </GridView>
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/liner4"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="频道推荐"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:gravity="left"
+            android:textSize="15dp"
+            android:text="点击添加频道"/>
+
+    </LinearLayout>
+    <GridView
+        android:id="@+id/gridicon2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10px"
+        android:horizontalSpacing="4px"
+        android:verticalSpacing="4px"
+        android:numColumns="4"
+        android:layout_below="@id/liner4"
+        android:focusable="true"
+        android:descendantFocusability="blocksDescendants">
+    </GridView>
+
+</RelativeLayout>

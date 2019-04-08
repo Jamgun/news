@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".searchm"
+    android:id="@+id/re">
+    <ImageView
+        android:id="@+id/img_pgbar0"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/amin_pgbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:id="@+id/liner5">
+        <com.java.zhangshihang.DelEditText
+            android:id="@+id/searchtext2"
+            android:layout_weight="20"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:hint="输入你要搜索的内容"/>
+        <Button
+            android:id="@+id/searchbutton2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="100"
+            android:layout_margin="10dp"
+            android:onClick="onClicksearchs"
+            android:background="@mipmap/search"/>
+
+    </LinearLayout>
+    <ListView
+        android:layout_below="@id/liner5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv2">
+
+    </ListView>
+
+</RelativeLayout>
